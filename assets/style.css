@@ -14,12 +14,23 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   text-align: center;
 }
 header {
   width: 100%;
+  padding: 3rem;
+}
+.registration {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+}
+.register-pet,
+.requests-of-stay {
+  padding: 2rem;
+  border: 1px solid #999;
+  border-radius: 5px;
 }
 form {
   display: flex;
@@ -48,8 +59,9 @@ select {
 input[type="submit"] {
   width: 10rem;
 }
-.requests-of-stay {
-}
-.requests-of-stay h3 {
+ul {
   margin-top: 2rem;
+}
+ul li {
+  text-align: left;
 }

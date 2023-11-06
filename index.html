@@ -38,34 +38,46 @@
   </head>
 
   <body>
-    <header></header>
+    <header>
+      <h1>Arca di Ntò</h1>
+      <h3>pensione per animali</h3>
+    </header>
 
     <main>
-      <h1>Arca di Antò</h1>
-      <h3>pensione per animali</h3>
-      <form id="petForm">
-        <label for="petName">Nome dell'animale:</label>
-        <input type="text" id="petName" name="petName" required />
+      <div class="registration">
+        <div class="register-pet">
+          <h3>Richiedi posto per il tuo pet ↓</h3>
+          <form id="petForm">
+            <label for="petName">Nome dell'animale:</label>
+            <input type="text" id="petName" name="petName" required />
 
-        <label for="ownerName">Nome del proprietario:</label>
-        <input type="text" id="ownerName" name="ownerName" required />
+            <label for="ownerName">Nome del proprietario:</label>
+            <input type="text" id="ownerName" name="ownerName" required />
 
-        <label for="species">Specie:</label>
-        <select id="species" name="species">
-          <option value="cane">Cane</option>
-          <option value="gatto">Gatto</option>
-          <option value="coniglio">Coniglio</option>
-        </select>
+            <label for="species">Specie:</label>
+            <select id="species" name="species">
+              <option value="cane">Cane</option>
+              <option value="gatto">Gatto</option>
+              <option value="coniglio">Coniglio</option>
+            </select>
 
-        <label for="breed">Razza:</label>
-        <input type="text" id="breed" name="breed" required />
+            <label for="breed">Razza:</label>
+            <input type="text" id="breed" name="breed" required />
 
-        <input type="submit" value="Crea oggetto Pet" />
-      </form>
+            <input type="submit" value="Invia richiesta" />
+          </form>
+        </div>
 
-      <div class="requests-of-stay">
-        <h3>Richieste recenti ↓</h3>
-        <ul id="pending-requests"></ul>
+        <div class="requests-of-stay">
+          <h3>Richieste recenti ↓</h3>
+          <ul id="pending-requests">
+            <li>
+              Nome: Fuffi, Proprietario: Hagrid, Specie: cane, Razza: a tre
+              teste
+            </li>
+            <li>Nome: Argo, Proprietario: Zeus, Specie: cane, Razza: dio</li>
+          </ul>
+        </div>
       </div>
     </main>
 
